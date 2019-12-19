@@ -13,3 +13,9 @@ function factorial(num) {
 
     return factorial(num) * factorial(num - 1);
 }
+
+function factorial(x) {
+    if (x < 0) return 0;
+    if(x <= 1) return 1;
+    return x * factorial(x - 1);
+}
