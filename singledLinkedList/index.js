@@ -56,12 +56,28 @@ class singlyLinkedList {
         }
         return this.currentHead;
     }
+
+    // unshit
+    unshift(val) {
+        var newNode = new Node(val);
+        console.log('newNode', newNode);
+        if(!this.head) {
+            this.head = newNode;
+            this.tail = this.head;
+        } else {
+            newNode.next = this.head;
+            this.head = newNode;
+        }
+        this.length++;
+        return this;
+    }
 }
 
 var list = new singlyLinkedList();
 list.push('hi');
 list.push('google');
 list.push('apple');
+list.unshift('fb');
 
 
-console.log(list.tail);
+console.log(list);
