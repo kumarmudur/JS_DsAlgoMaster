@@ -44,7 +44,7 @@ class DoublyLinkedList {
         return poppedNode;
     }
 
-    // shit
+    // shift
     shift() {
         if(this.length === 0) return undefined;
         var oldHead = this.head;
