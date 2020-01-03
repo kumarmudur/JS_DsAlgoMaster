@@ -41,7 +41,7 @@ class BinarySearchTree {
     }
 
     // find
-    contains(val) {
+    find(val) {
         if (this.root === null) return false;
         var current = this.root, found = false;
         while (current && !found) {
